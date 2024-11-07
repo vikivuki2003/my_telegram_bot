@@ -19,8 +19,7 @@ async def start_cmd(message: types.Message):
                             input_field_placeholder='What are you interested in?'))
 
 
-# @user_private_router.message(F.text.lower() == "menu")
-@user_private_router.message(Text(equals="menu", ignore_case=True))
+@user_private_router.message(F.text.lower() == "menu")
 async def menu_cmd(message: types.Message):
     await message.answer("Our menu:")
 
@@ -31,7 +30,7 @@ async def about_cmd(message: types.Message):
     await message.answer("About our shop:")
 
 
-@user_private_router.message(F.text.lower() == "Payment options")
+@user_private_router.message(F.text.lower() == "payment options")
 @user_private_router.message(Command("payment"))
 async def payment_cmd(message: types.Message):
 
