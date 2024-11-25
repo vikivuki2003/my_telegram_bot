@@ -1,35 +1,40 @@
-# My Telegram Bot  
+# Telegram Bot for Café
 
-This is a simple Telegram bot created using [Python](https://www.python.org/) and [python-telegram-bot](https://github.com/python-telegram-bot/python-telegram-bot). The bot is designed to perform various tasks and interact with users on Telegram.  
+Welcome to the "Telegram Bot for Café" project! This bot is designed to simplify customer interactions with the café, allowing them to easily place orders, get information about the menu and special offers , and leave feedback.
 
-## Features  
+## Description
 
-- Command handling  
-- Responses to text messages  
-- Integration with various APIs (if applicable)  
-- Easy configuration and extensibility  
+The Telegram bot provides users with the ability to:
 
-## Installation  
+- View the café menu
+- Place takeout or delivery orders
+- Learn about special offers and promotions
+- Leave feedback about their visit
+- Get information about the café's hours and location
 
-1. Clone the repository:  
-   git clone https://github.com/vikivuki2003/my_telegram_bot.git  
-   cd my_telegram_bot  
+## Technologies
 
-Create a virtual environment (optional):
-python -m venv venv  
-source venv/bin/activate  # On Windows, use: venv\Scripts\activate  
+The project is developed using the following technologies:
 
-Install the dependencies:
-pip install -r requirements.txt  
+- Python
+- Aiogram
+- PostgreSQL for storing menu and order information
 
-Obtain your bot token from BotFather on Telegram.
-Create a .env file and add your token:
-dotenv
-TG_BOT_TOKEN=your_token_here  
-Running the Bot
-Run the bot using the following command:
+## Installation
 
-bash
-python bot.py  
-Usage
-Once the bot is running, you can interact with it via Telegram. Simply find it by its username and send a command or message.
+1. Clone the repository:
+   git clone https://github.com/vikivuki2003/my_telegram_bot.git
+
+
+2. Navigate to the project directory:
+   cd my_telegram_bot
+
+4. Install the required dependencies:
+   pip install -r requirements.txt
+
+5. Create a .env file and add your bot token:
+   TELEGRAM_BOT_TOKEN=your_bot_token
+
+6. Usage
+   Start the bot:
+   python bot.py
